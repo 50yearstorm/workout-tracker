@@ -1,3 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>10-Minute Strength Plan (Now → Feb 14)</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <div class="logo">10</div>
+      <div>
+        <h1>10-Minute Strength Plan</h1>
+        <p class="sub">Arms • Chest • Butt • Abs — Now → Feb 14</p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="today" role="tab">Today</button>
+      <button class="tab" data-tab="workouts" role="tab">Workouts</button>
+      <button class="tab" data-tab="tracker" role="tab">Tracker</button>
+      <button class="tab" data-tab="photos" role="tab">Photos</button>
+      <button class="tab" data-tab="settings" role="tab">Export</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- TODAY -->
+    <section id="tab-today" class="panel active">
+      <div class="card">
+        <h2>Today’s plan</h2>
+        <div class="grid2">
+          <div>
+            <div class="kpi">
+              <div class="kpiLabel">Date</div>
+              <div class="kpiValue" id="todayDate">—</div>
+            </div>
+            <div class="kpi">
+              <div class="kpiLabel">Workout</div>
+              <div class="kpiValue" id="todayWorkout">—</div>
+            </div>
+            <div class="kpi">
+              <div class="kpiLabel">Time</div>
+              <div class="kpiValue">10 minutes</div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn primary" id="startTimer">Start 10:00 Timer</button>
+            <div class="timer" id="timer">10:00</div>
+            <button class="btn" id="resetTimer">Reset</button>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <h3>Quick checklist</h3>
+        <ul class="checklist">
+          <li><label><input type="checkbox" id="ckStart"/> I started</label></li>
+          <li><label><input type="checkbox" id="ckFinish"/> I finished</label></li>
+          <li><label><input type="checkbox" id="ckLog"/> I logged it (Tracker tab)</label></li>
+          <li><label><input type="checkbox" id="ckPhotos"/> Sunday photos done (Photos tab)</label></li>
+        </ul>
+
+        <p class="hint">Tip: if a day is “Off”, do 2 minutes of planks or a brisk walk and still log “Off”.</p>
+      </div>
+
+      <div class="card">
+        <h2>Weekly schedule (repeat)</h2>
+        <div class="schedule" id="scheduleGrid"></div>
+        <p class="hint">Default is 3 workouts/week. Saturday is optional. Sunday is photos + check-in.</p>
+      </div>
+    </section>
+
+    <!-- WORKOUTS -->
+    <section id="tab-workouts" class="panel">
+      <div class="card">
+        <h2>Day A — Arms + Chest (10 min)</h2>
+        <p class="hint">Circuit. Repeat twice. Minimal rest (30–40 sec). Stop 1–2 reps before failure.</p>
+
+        <div class="workout">
+          <div class="move">
+            <h3>1) Dumbbell Floor Chest Press</h3>
+            <p><b>2 rounds</b> • 10 reps • slow 3-second lower</p>
+            <p class="links">
+              <a href="https://www.acefitness.org/resources/everyone/exercise-library/88/dumbbell-floor-press/" target="_blank" rel="noopener">Demo</a>
+            </p>
+          </div>
+
+          <div class="move">
+            <h3>2) Pushups</h3>
+            <p>8–15 reps • 2 seconds down • chest touches floor • hands slightly wider than shoulders</p>
+            <p class="links">
+              <a href="https://www.acefitness.org/resources/everyone/exercise-library/12/push-up/" target="_blank" rel="noopener">Demo</a>
+            </p>
+            <p class="hint">Harder: feet elevated. Easier: hands on a bench/couch. Keep elbows at 30–45° (not flared).</p>
+          </div>
+
+          <div class="move">
+            <h3>3) Bicep Curls</h3>
+            <p>10 reps • elbows pinned to sides • 2 sec up / 3 sec down</p>
+            <p class="links">
+              <a href="https://www.acefitness.org/resources/everyone/exercise-library/93/dumbbell-biceps-curl/" target="_blank" rel="noopener">Demo</a>
+            </p>
+          </div>
+
+          <div class="move">
+            <h3>4) Overhead Tricep Extension</h3>
+            <p>10 reps • elbows forward and tight • core braced</p>
+            <p class="links">
+              <a href="https://www.acefitness.org/resources/everyone/exercise-library/57/overhead-dumbbell-triceps-extension/" target="_blank" rel="noopener">Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Day B — Butt + Abs (10 min)</h2>
+        <p class="hint">Circuit. Repeat twice. Control beats speed.</p>
+
+        <div class="workout">
+          <div class="move">
+            <h3>1) Goblet Squat</h3>
+            <p>12 reps</p>
+            <p class="links">
+              <a href="https://www.acefitness.org/resources/everyone/exercise-library/151/goblet-squat/" target="_blank" rel="noopener">Demo</a>
+            </p>
+          </div>
+
+          <div class="move">
+            <h3>2) Weighted Glute Bridge</h3>
+            <p>12 reps • 2-second pause at top</p>
+            <p class="links">
+              <a href="https://www.acefitness.org/resources/everyone/exercise-library/196/glute-bridge/" target="_blank" rel="noopener">Demo</a>
+            </p>
+          </div>
+
+          <div class="move">
+            <h3>3) Dead Bug (sit-up alternative)</h3>
+            <p>10 reps per side</p>
+            <p class="links">
+              <a href="https://www.acefitness.org/resources/everyone/exercise-library/324/dead-bug/" target="_blank" rel="noopener">Demo</a>
+            </p>
+          </div>
+
+          <div class="move">
+            <h3>4) Forearm Plank</h3>
+            <p>30–45 sec</p>
+            <p class="links">
+              <a href="https://www.acefitness.org/resources/everyone/exercise-library/63/plank/" target="_blank" rel="noopener">Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRACKER -->
+    <section id="tab-tracker" class="panel">
+      <div class="card">
+        <h2>Log today</h2>
+        <form id="logForm" class="form">
+          <div class="row">
+            <label>Date
+              <input type="date" id="logDate" required/>
+            </label>
+            <label>Workout
+              <select id="logWorkout" required>
+                <option value="Day A">Day A (Arms + Chest)</option>
+                <option value="Day B">Day B (Butt + Abs)</option>
+                <option value="Off">Off</option>
+              </select>
+            </label>
+          </div>
+          <div class="row">
+            <label>Weights used (quick note)
+              <input type="text" id="logWeights" placeholder="e.g., curl 25, press 40, pushups 12"/>
+            </label>
+          </div>
+          <div class="row">
+            <label>Notes (1 sentence)
+              <input type="text" id="logNotes" placeholder="e.g., Felt strong; slow negatives."/>
+            </label>
+          </div>
+          <div class="row">
+            <label class="inline"><input type="checkbox" id="logStarted"/> Started</label>
+            <label class="inline"><input type="checkbox" id="logFinished"/> Finished</label>
+          </div>
+          <div class="row">
+            <button class="btn primary" type="submit">Save log</button>
+            <button class="btn" type="button" id="clearToday">Clear today’s form</button>
+          </div>
+        </form>
+        <p class="hint">Logs save on this device. Use Export weekly to back up.</p>
+      </div>
+
+      <div class="card">
+        <div class="tableHeader">
+          <h2>History</h2>
+          <div class="tableActions">
+            <button class="btn" id="deleteLast">Delete last entry</button>
+            <button class="btn danger" id="deleteAll">Delete all</button>
+          </div>
+        </div>
+        <div class="tableWrap">
+          <table id="logTable">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Workout</th>
+                <th>Started</th>
+                <th>Finished</th>
+                <th>Weights</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOS -->
+    <section id="tab-photos" class="panel">
+      <div class="card">
+        <h2>Sunday progress photos</h2>
+        <p>Take these every Sunday (same lighting, same clothes):</p>
+        <ol>
+          <li>Front (arms relaxed)</li>
+          <li>Side</li>
+          <li>Back</li>
+          <li>Optional: flexed arm</li>
+        </ol>
+
+        <div class="row">
+          <button class="btn primary" id="markPhotos">Mark photos taken for this week</button>
+          <div class="pill" id="photosStatus">Not marked yet</div>
+        </div>
+
+        <p class="hint">Side + back photos show glute changes first. Chest changes show best from the side.</p>
+      </div>
+    </section>
+
+    <!-- EXPORT -->
+    <section id="tab-settings" class="panel">
+      <div class="card">
+        <h2>Export / Import</h2>
+        <div class="row">
+          <button class="btn" id="exportJson">Download backup (JSON)</button>
+          <button class="btn" id="exportCsv">Download history (CSV)</button>
+        </div>
+
         <div class="row">
           <button class="btn" id="importBtn">Import backup (JSON)</button>
           <input type="file" id="importJsonFile" accept="application/json" style="display:none"/>
@@ -16,10 +267,9 @@
       <div class="card">
         <h2>GitHub Pages publish (quick steps)</h2>
         <ol>
-          <li>Create a new GitHub repository named <b>workout-tracker</b>.</li>
-          <li>Upload these files: <b>index.html</b>, <b>styles.css</b>, <b>app.js</b>.</li>
-          <li>In GitHub: Settings → Pages → “Deploy from a branch” → Branch: <b>main</b> → folder: <b>/(root)</b>.</li>
-          <li>Wait for the Pages URL, then open it on your phone.</li>
+          <li>Repo: <b>workout-tracker</b></li>
+          <li>Files in root: <b>index.html</b>, <b>styles.css</b>, <b>app.js</b></li>
+          <li>Settings → Pages → Branch: <b>main</b> → folder: <b>/(root)</b></li>
         </ol>
       </div>
     </section>
